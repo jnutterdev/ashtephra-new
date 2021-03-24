@@ -4,5 +4,5 @@
 
 
 
-book = albums
-library_project = shop_project
+- book = albums
+- library_project = shop_project
