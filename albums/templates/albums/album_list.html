@@ -1,0 +1,10 @@
+<h1>All Albums</h1>
+{% for album in object_list %}
+<ul>
+    <li>Title: {{album.title}}</li>
+    <li>Artist: {{album.artist}}</li>
+    <li>Label: {{album.label}}</li>
+    <li>Genre: {{album.genre}}</li>
+    <li>SKU: {{album.sku}}</li>
+</ul>
+{% endfor %}
