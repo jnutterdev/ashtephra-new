@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # third-party apps
     'rest_framework',
     'django_sass',
+    'sass_processor',
 
     # local
     'albums.apps.AlbumsConfig',
@@ -132,4 +133,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+]
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
 ]

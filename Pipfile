@@ -8,6 +8,9 @@ django = "==3.0.3"
 python-dotenv = "==0.15.0"
 djangorestframework = "==3.11.0"
 django-sass = "==1.0.1"
+django-material = "*"
+libsass = "*"
+django-sass-processor = "*"
 
 [dev-packages]
 
