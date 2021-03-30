@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
 <h1>All Albums</h1>
 {% for album in object_list %}
 <ul>
@@ -8,3 +12,5 @@
     <li>SKU: {{album.sku}}</li>
 </ul>
 {% endfor %}
+</div>
+{% endblock content %}

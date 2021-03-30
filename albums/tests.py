@@ -11,5 +11,5 @@ class SimpleTests(SimpleTestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_album_page_status_code(self):
-        response = self.client.get('/album/')
+        response = self.client.get('/albums/')
         self.assertEqual(response.status_code, 200)    

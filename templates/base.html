@@ -9,12 +9,16 @@
     <title>Ashtephra records</title>
     <link rel="stylesheet" href="{% static 'vendor/bulma/css/bulma.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-
 </head>
 
 <body>
-    <h1>Hello!</h1>
+    <div class="container">
+        {% include 'partials/nav.html' %}
+    </div>
+    <div class="container">
+    {% block content %}
+    {% endblock content %}
+    </div>
 </body>
 
 </html>

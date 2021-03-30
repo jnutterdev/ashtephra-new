@@ -14,3 +14,4 @@ class AboutPageView(TemplateView):
 
 class BaseView(TemplateView):
     template_name = 'base.html'
+
